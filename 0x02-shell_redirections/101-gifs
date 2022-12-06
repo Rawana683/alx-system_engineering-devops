@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -iname '*.gif' -exec bash -c 'printf "%s\n" "${@%.*}"' _ {} +
+find . -type f -name '*.gif' -printf "%f'\n'" "${@%.*}" _ {} + | LC_ALL=C
